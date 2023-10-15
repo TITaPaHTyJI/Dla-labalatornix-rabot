@@ -1,7 +1,9 @@
 list_players = ["Маша", "Петя", "Саша", "Оля", "Кирилл", "Коля"]
-total_players = len(list_players)
 
-team_1 = list_players[0:3]
-team_2 = list_players[3:]
+middle = len(list_players) // 2
 
-print(team_1, team_2, sep='\n')
+team_1 = list_players[:middle]
+team_2 = list_players[middle:]
+
+print(team_1)
+print(team_2)
